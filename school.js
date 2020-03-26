@@ -1,6 +1,6 @@
 /*
-correction
 
+correction
 var studentName=studentDetails[j].fields.Studet_Name;
 var STUDENTS_KEY = "students";
 
@@ -15,10 +15,10 @@ function main() {
 //firestore kry = 1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw
 //firebase connection
 
-function firebaseConnection() 
+function firebaseConnection()
 {
   var email = "firebase-adminsdk-5491u@school-f2298.iam.gserviceaccount.com";
-  var key = "-----BEGIN PRIVATE KEY-----3gQ3\n4AMWQetkZMfKc+XAKBQ2et1WSjV9ZLkLVeXtbTROIW6vPaFGE2BIvbjOdpm/4P0h\nwZCRlZgRGkhGlUHitpXMBG8xyTpf8lqsfCFMxrAfT4BdSaCk9VAwPwY/AEtA0pqH\nW3N8pGiTyvnfs5qeepjJFCcf/wpOn91lPSqz+wDIudsk1999zQbVDQhIvWajQcRS\nsV3yVPuhgnrPkg4DBqj1U5KFUdqR5ht8J3uQgI7RNaLE3DGEhNU55GAv3dNHyeSj\nQNor8qm7AgMBAAECggEAN3d88360J5VKL1U1YYSHVSZsDiOr3g69gQYtqTsvabIJ\nw/y+hSiaSV50ZhLLhqMM688Lgj05ezZtbtxF/epUruVoBoC7jfvTHBM4UO0AnXnp\nLCDIiIPxp3G/T1+dxP+NGV9NCqnmcWS/buUGt3DGLM4EIubqKfacAcw6pMq+wDAZ\nYmRhEky0FURgZRaOT1NhtuS8BpnIeSdOYX1naE/mcV+QSITQ84a42sPJiUEzYbw3\nPD6SJSAeQ5lFLk+c3FZzraRGYz8077D2wMLaYQ206ZdeKkBtEp64tF6GYe2TsJlG\nQB4hMCGHA5sayQjGoySM/1cgh+xCdTBtkLtcPiSZvQKBgQD1oNSsHgYvLQ+P818U\nuPOyqBM1c1E63AAkGfvmnqA+Cae0zWYHAiVsTKiigdLubB2jYZ7fMsi9U4Ewqw/q\nkqZZ+PcNJD1yLWeYb8iEms5Atdi+C3KQABmoj4jqEr/dElhf62mroNPvd6mORK7X\nds5mf4oRoFoEnLovAwpP++Pi7QKBgQDh8zy28+3hgcIrZpijJVFtIRuYUMhHA8bb\n0pvKTvwCZZZDYhcUSeZujJvxPxT2C4IoinrzumKGs2vQ23duv1QFFRC8dA7ZefP/\nWtm3dPIZrK/6WKUnx3YlTkSyKoXfodCToH3pnMaBquBEeC8BdO0z+N06kR8FFTQk\nTGcLomBiRwKBgQCO/MQxOf0xo1Km4u8buhsrioo8GFhWIlH2siWg+ACifK5jIxrc\nw5QTeoDEsTygTNHoFWEN35taE21mbn6CeEJcqADxZoJaoDHpXFFnWFLu+q0k3Lch\nOt208XGriaSlRhOqKvnFzobxpUBQMI1zopa+tkoivq0IeFAuI9/x9dmQdQKBgQCQ\nmxJVaKHqvBffnOa9KwoE1LaLcc/rmyAu2Yg5HvmsMwXLFED/DBi80aKP8DZjDZR8\ni7wKtlOOL9Alt/+k0jBcnFG8um4ygxlEaQmDnwW+psVtbEQuxDn5wDC48fwB1tbd\nVE6hL2Pf4tNrHpu+y+1vYKt9axk2MI7RWFBuoroaywKBgHgL6FNGt0z8IaXezWuZ\npjzg9mQOghpJUi364ukU987c/WQeioS/H2iuFdVv5Ry4/t+DSF47kvxZwBYBsDSE\nISBfGTBEso7FE6pDbF7snJQs7ZwnMEGZ0P5ESuBxghxosvcEZIO21gGz7J62wdbF\nPlx4+2/A2x4s2nz8CGvOBHoI\n-----END PRIVATE KEY-----\n";
+  var key = "-----BEGIN PRIVATE KEY-----\n7zWYf9g300D\nBXgVV7+YomepF6wtM5MzAw5tMRZvGBtj+PwRLY7KQvm9nopkdFz2Y3VMQ+/K3gQ3\n4AMWQetkZMfKc+XAKBQ2et1WSjV9ZLkLVeXtbTROIW6vPaFGE2BIvbjOdpm/4P0h\nwZCRlZgRGkhGlUHitpXMBG8xyTpf8lqsfCFMxrAfT4BdSaCk9VAwPwY/AEtA0pqH\nW3N8pGiTyvnfs5qeepjJFCcf/wpOn91lPSqz+wDIudsk1999zQbVDQhIvWajQcRS\nsV3yVPuhgnrPkg4DBqj1U5KFUdqR5ht8J3uQgI7RNaLE3DGEhNU55GAv3dNHyeSj\nQNor8qm7AgMBAAECggEAN3d88360J5VKL1U1YYSHVSZsDiOr3g69gQYtqTsvabIJ\nw/y+hSiaSV50ZhLLhqMM688Lgj05ezZtbtxF/epUruVoBoC7jfvTHBM4UO0AnXnp\nLCDIiIPxp3G/T1+dxP+NGV9NCqnmcWS/buUGt3DGLM4EIubqKfacAcw6pMq+wDAZ\nYmRhEky0FURgZRaOT1NhtuS8BpnIeSdOYX1naE/mcV+QSITQ84a42sPJiUEzYbw3\nPD6SJSAeQ5lFLk+c3FZzraRGYz8077D2wMLaYQ206ZdeKkBtEp64tF6GYe2TsJlG\nQB4hMCGHA5sayQjGoySM/1cgh+xCdTBtkLtcPiSZvQKBgQD1oNSsHgYvLQ+P818U\nuPOyqBM1c1E63AAkGfvmnqA+Cae0zWYHAiVsTKiigdLubB2jYZ7fMsi9U4Ewqw/q\nkqZZ+PcNJD1yLWeYb8iEms5Atdi+C3KQABmoj4jqEr/dElhf62mroNPvd6mORK7X\nds5mf4oRoFoEnLovAwpP++Pi7QKBgQDh8zy28+3hgcIrZpijJVFtIRuYUMhHA8bb\n0pvKTvwCZZZDYhcUSeZujJvxPxT2C4IoinrzumKGs2vQ23duv1QFFRC8dA7ZefP/\nWtm3dPIZrK/6WKUnx3YlTkSyKoXfodCToH3pnMaBquBEeC8BdO0z+N06kR8FFTQk\nTGcLomBiRwKBgQCO/MQxOf0xo1Km4u8buhsrioo8GFhWIlH2siWg+ACifK5jIxrc\nw5QTeoDEsTygTNHoFWEN35taE21mbn6CeEJcqADxZoJaoDHpXFFnWFLu+q0k3Lch\nOt208XGriaSlRhOqKvnFzobxpUBQMI1zopa+tkoivq0IeFAuI9/x9dmQdQKBgQCQ\nmxJVaKHqvBffnOa9KwoE1LaLcc/rmyAu2Yg5HvmsMwXLFED/DBi80aKP8DZjDZR8\ni7wKtlOOL9Alt/+k0jBcnFG8um4ygxlEaQmDnwW+psVtbEQuxDn5wDC48fwB1tbd\nVE6hL2Pf4tNrHpu+y+1vYKt9axk2MI7RWFBuoroaywKBgHgL6FNGt0z8IaXezWuZ\npjzg9mQOghpJUi364ukU987c/WQeioS/H2iuFdVv5Ry4/t+DSF47kvxZwBYBsDSE\nISBfGTBEso7FE6pDbF7snJQs7ZwnMEGZ0P5ESuBxghxosvcEZIO21gGz7J62wdbF\nPlx4+2/A2x4s2nz8CGvOBHoI\n-----END PRIVATE KEY-----\n";
   var projectId = "school-f2298";
   var firestore = FirestoreApp.getFirestore(email, key, projectId);
   return firestore;
@@ -41,6 +41,10 @@ function centerData()
 //fatch data from firebase
 function fatchField()
 {
+  
+  
+  
+    
   var allCentres=centerData();
   var center_name;
   var center_name_arr=[];
@@ -56,11 +60,11 @@ function fatchField()
      //branch=allCentres[i].fields.Batch;
      center_name_arr.push(center_name);
      center_id_arr.push(center_id);
-     //branch_arr.push(branch);Untitled project
+     //branch_arr.push(branch);
 
   }
-  
-  
+
+
   newSheet(center_name_arr,center_id_arr);
 }
 
@@ -69,6 +73,8 @@ function fatchField()
 //write new Sheet
 function newSheet(sheet,center_id)
 {
+
+  
   
   var student_attendance_date_arr=[];
   var student_attendance_present_arr=[];
@@ -78,21 +84,69 @@ function newSheet(sheet,center_id)
   var CENTERS_KEY = "centers";
   var STUDENTS_KEY = "student";
   var BATCH_FIELD = "Batch";
+  var DATE_FIELD = "Date";
   var ATTENDANCE = "attendance";
   var allCentres=centerData();
   var firestore=firebaseConnection();
-  var p=2;
-  var q=1;
-  var x=1;
-  var y=4;
+  var p=3;     //student basic details row
+  var q=1;     //student basic details column
+  var x=2;    //attendance date row 
+  var y=4;    //attendance date column
   var e=1;
-  var cNo=0;
-  var m=4;
-  var n=2;
+  var cNo=0;   //center id number
+  var m=4;     //attendance value row
+  var n=3;     //attendance value column
   var flg=true
- 
+
+
   
   
+  var appSS=SpreadsheetApp;
+  var updateStudentDateArr=[];
+  var updateStudentAttendanceArr=[];
+  var ssF=appSS.getActiveSpreadsheet();
+  var activeSheet1=ssF.getActiveSheet();
+  var j=2;//update date row
+  var h=3;//update attendance row
+  var updateNo=activeSheet1.getRange(1,1).getValue();
+  var updateDate="2020-05-04" //activeSheet1.getRange(1,2).getValue();
+  
+  
+  if(updateNo!=0)
+  {
+    
+    var flag=false;
+    
+    var updateStudentDetails = firestore.query(CENTERS_KEY + "/" + center_id[cNo] + "/" + STUDENTS_KEY).execute();
+    for(i=0;i<updateStudentDetails.length;i++)
+    {
+      var student_QR_Code=updateStudentDetails[i].fields.QR_Code;
+      
+      var updateStudentAttendance= firestore.query(CENTERS_KEY + "/" + center_id[cNo] + "/" + STUDENTS_KEY + "/" + student_QR_Code + "/" + ATTENDANCE).where(DATE_FIELD, ">", updateDate).execute();
+       for(k=0;k<updateStudentAttendance.length;k++)
+        {
+          var attendanceDate=updateStudentAttendance[k].fields.Date;
+          var attendancePresent=updateStudentAttendance[k].fields.Present;
+
+          activeSheet1.getRange(j,updateNo).setValue(attendanceDate);
+          activeSheet1.getRange(h,updateNo).setValue(attendancePresent);
+          h++;
+          flag=true;
+        }
+    }
+    
+    if(flag)
+    {
+    updateNo++;
+    activeSheet1.getRange(1, 1).setValue(updateNo);
+    activeSheet1.getRange(1, 2).setValue(attendanceDate);
+    }
+  }
+  else
+  {
+  
+  
+
     for(i=0;i<sheet.length;i++)
     {
 
@@ -101,61 +155,60 @@ function newSheet(sheet,center_id)
       var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
       var NewSheet = activeSpreadsheet.getSheetByName(sheet[i]);
 
-      if (NewSheet != null) {
-        activeSpreadsheet.deleteSheet(NewSheet);
+      if (!NewSheet) {
+        NewSheet = activeSpreadsheet.insertSheet();
+        NewSheet.setName(sheet[i]);
       }
 
-      NewSheet = activeSpreadsheet.insertSheet();
-      NewSheet.setName(sheet[i]);
       
-      
+
+
       var studentDetails = firestore.query(CENTERS_KEY + "/" + center_id[cNo] + "/" + STUDENTS_KEY).execute();
-      
-      
+
+
       //fatch student details
       for(j=0;j<studentDetails.length;j++)
       {
         var studentName=studentDetails[j].fields.Studet_Name;
         var studentBatch=studentDetails[j].fields.Batch;
         var student_QR_Code=studentDetails[j].fields.QR_Code;
-        
-       
-        
-        student_name_arr.push(studentNameUntitled project);
+
+
+
+        student_name_arr.push(studentName);
         student_batch_arr.push(studentBatch);
         student_QR_Code_arr.push(student_QR_Code);
-        
-        
+
+
         var studentAttendance= firestore.query(CENTERS_KEY + "/" + center_id[cNo] + "/" + STUDENTS_KEY + "/" + student_QR_Code + "/" + ATTENDANCE).execute();
-        
+
         for(k=0;k<studentAttendance.length;k++)
         {
           var attendanceDate=studentAttendance[k].fields.Date;
           var attendancePresent=studentAttendance[k].fields.Present;
-          
+
           student_attendance_date_arr.push(attendanceDate);
           student_attendance_present_arr.push(attendancePresent);
         }
-        
-        
-        
-        //add attendance date 
+
+
+        //add attendance date
         for(f=0;f<student_attendance_date_arr.length;f++)
         {
-          
+
           var app=SpreadsheetApp;
           var ss=app.getActiveSpreadsheet();
           var activeSheet=ss.getActiveSheet();
           activeSheet.getRange(x,y).setValue(student_attendance_date_arr[f]);
           y++;
           
-          
+          activeSheet.getRange(1,2).setValue(student_attendance_date_arr[f]);
         }
-        
+
         y=4;
-        x=1;
-        
-        
+        x=2;
+
+
         //add attenddance value
         for(f1=0;f1<student_attendance_present_arr.length;f1++)
         {
@@ -164,74 +217,66 @@ function newSheet(sheet,center_id)
           var activeSheet=ss.getActiveSheet();
           activeSheet.getRange(n,m).setValue(student_attendance_present_arr[f1]);
           m++;
+          activeSheet.getRange(1,1).setValue(m);
         }
         m=4;
         n++;
-        
+
         student_attendance_present_arr=[];
         student_attendance_date_arr=[];
       }
-      
-      
-      
+
+
+
       //adding value into sheet
       for(k=0;k<student_QR_Code_arr.length;k++)
       {
         var app=SpreadsheetApp;
         var ss=app.getActiveSpreadsheet();
         var activeSheet=ss.getActiveSheet();
-        activeSheet.getRange(1,1).setValue("QR Code");
+        activeSheet.getRange(2,1).setValue("QR Code");
         activeSheet.getRange(p,q).setValue(student_QR_Code_arr[k]);
         p++;
       }
-      
-      p=2;
+
+      p=3;
       q=2;
       for(k=0;k<student_name_arr.length;k++)
       {
         var app=SpreadsheetApp;
         var ss=app.getActiveSpreadsheet();
         var activeSheet=ss.getActiveSheet();
-        activeSheet.getRange(1,2).setValue("Name");
+        activeSheet.getRange(2,2).setValue("Name");
         activeSheet.getRange(p,q).setValue(student_name_arr[k]);
         p++;
       }
-      p=2;
+      p=3;
       q=3;
       for(k=0;k<student_batch_arr.length;k++)
       {
         var app=SpreadsheetApp;
         var ss=app.getActiveSpreadsheet();
         var activeSheet=ss.getActiveSheet();
-        activeSheet.getRange(1,3).setValue("Batch");
+        activeSheet.getRange(2,3).setValue("Batch");
         activeSheet.getRange(p,q).setValue(student_batch_arr[k]);
         p++;
       }
-      
-      
-      p=2;
+
+
+      p=3;
       q=1;
       cNo++;
       student_QR_Code_arr=[];
       student_name_arr=[];
       student_batch_arr=[];
       student_attendance_date_arr=[];
-      
-      
-  }
  
+    }
+    
+   }
   
 }
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
