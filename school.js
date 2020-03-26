@@ -108,8 +108,8 @@ function newSheet(sheet,center_id)
   var activeSheet1=ssF.getActiveSheet();
   var j=2;//update date row
   var h=3;//update attendance row
-  var updateNo=activeSheet1.getRange(1,1).getValue();
-  var updateDate="2020-05-04" //activeSheet1.getRange(1,2).getValue();
+  var updateNo= activeSheet1.getRange(1,1).getValue();
+  var updateDate= activeSheet1.getRange(1,2).getValue(); //"2020-05-04"
   
   
   if(updateNo!=0)
