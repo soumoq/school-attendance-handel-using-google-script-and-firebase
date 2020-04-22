@@ -1,6 +1,6 @@
 function main() {
+  //firebaseUploadLight();
   firebaseUpload();
-  //firebaseUpload();
 }
 
 function firebaseConnection()
@@ -12,7 +12,66 @@ function firebaseConnection()
   return firestore;
 }
 
+
+
+
 function firebaseUpload()
+{
+  var obj={
+    "topics": [
+      {
+        "quiz_set_id": "CoronavirusAwareness_EP1_TP1_QZ",
+        "topic_id": "CoronavirusAwareness_EP1_TP1",
+        "topic_text": "Sonu And His Family",
+        "topic_image_id": "CoronavirusAwareness/media/images/sonu_and_family_thumbnail.jpg",
+        "media_id": [
+          "CoronavirusAwareness_EP1_TP1_VD1",
+          "CoronavirusAwareness_EP1_TP1_PDF1",
+        ],
+          "vernacular_id": "VR_CoronavirusAwareness_EP1_TP1"
+          },
+          {
+          "quiz_set_id": "CoronavirusAwareness_EP1_TP2_QZ",
+          "topic_id": "CoronavirusAwareness_EP1_TP2",
+          "topic_text": "Thoughtful Milli",
+          "topic_image_id": "CoronavirusAwareness/media/images/thoughful_millli_thumbnail.jpg",
+          "media_id": [
+          "CoronavirusAwareness_EP1_TP2_VD1",
+          "CoronavirusAwareness_EP1_TP2_PDF1",
+        ],
+        "vernacular_id": "VR_CoronavirusAwareness_EP1_TP2"
+      },
+      {
+        "quiz_set_id": "CoronavirusAwareness_EP1_TP3_QZ",
+        "topic_id": "CoronavirusAwareness_EP1_TP3",
+        "topic_text": "Clever Rivu",
+        "topic_image_id": "CoronavirusAwareness/media/images/clever_rivu_thumbnail.jpg",
+        "media_id": [
+          "CoronavirusAwareness_EP1_TP3_VD1",
+          "CoronavirusAwareness_EP1_TP3_PDF1",
+        ],
+          "vernacular_id": "VR_CoronavirusAwareness_EP1_TP3"
+          },
+        ]
+      }
+      
+      var firestore=firebaseConnection();
+      Logger.log(obj.topics.length);
+      
+      for(var i=0;i<obj.topics.length;i++)
+      {
+         firestore.createDocument("topics", obj.topics[i]);
+      }
+      
+      
+      
+}
+
+
+
+
+
+function firebaseUploadLight()
 {
   var obj = {
     "classes": [
@@ -23,13 +82,24 @@ function firebaseUpload()
             "class_image_id": "CoronavirusAwareness/media/images/coronavirus_thumbnail.jpg",
             "vernacular_id": "VR_CoronavirusAwareness1"
         },
+        {
+            "class_id": "CoronavirusAwareness1",
+            "episode_file_id": "CoronavirusAwareness_episodes1",
+            "class_text": "Coronavirus Awareness1",
+            "class_image_id": "CoronavirusAwareness/media/images/coronavirus_thumbnail.jpg1",
+            "vernacular_id": "VR_CoronavirusAwareness11"
+        }
     ]
 }
+      var firestore=firebaseConnection();
+      Logger.log(obj.classes.length);
+  
+  for(var i=0;i<obj.classes.length;i++)
+  {
+    firestore.createDocument("classes", obj.classes[i]);
+  }
       
-      var insertdata=obj.classes[0];
-    Logger.log(insertdata);
+   
       
-   var firestore=firebaseConnection();
-      firestore.createDocument("classes", insertdata);
       
 }
