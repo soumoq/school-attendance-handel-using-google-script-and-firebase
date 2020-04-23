@@ -99,7 +99,4 @@ function firebaseUploadLight()
     firestore.createDocument("classes", obj.classes[i]);
   }
       
-   
-      
-      
 }
