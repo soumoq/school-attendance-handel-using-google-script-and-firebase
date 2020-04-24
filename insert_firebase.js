@@ -17,54 +17,27 @@ function firebaseConnection()
 
 function firebaseUpload()
 {
-  var obj={
-    "topics": [
-      {
-        "quiz_set_id": "CoronavirusAwareness_EP1_TP1_QZ",
-        "topic_id": "CoronavirusAwareness_EP1_TP1",
-        "topic_text": "Sonu And His Family",
-        "topic_image_id": "CoronavirusAwareness/media/images/sonu_and_family_thumbnail.jpg",
-        "media_id": [
-          "CoronavirusAwareness_EP1_TP1_VD1",
-          "CoronavirusAwareness_EP1_TP1_PDF1",
-        ],
-          "vernacular_id": "VR_CoronavirusAwareness_EP1_TP1"
-          },
-          {
-          "quiz_set_id": "CoronavirusAwareness_EP1_TP2_QZ",
-          "topic_id": "CoronavirusAwareness_EP1_TP2",
-          "topic_text": "Thoughtful Milli",
-          "topic_image_id": "CoronavirusAwareness/media/images/thoughful_millli_thumbnail.jpg",
-          "media_id": [
-          "CoronavirusAwareness_EP1_TP2_VD1",
-          "CoronavirusAwareness_EP1_TP2_PDF1",
-        ],
-        "vernacular_id": "VR_CoronavirusAwareness_EP1_TP2"
-      },
-      {
-        "quiz_set_id": "CoronavirusAwareness_EP1_TP3_QZ",
-        "topic_id": "CoronavirusAwareness_EP1_TP3",
-        "topic_text": "Clever Rivu",
-        "topic_image_id": "CoronavirusAwareness/media/images/clever_rivu_thumbnail.jpg",
-        "media_id": [
-          "CoronavirusAwareness_EP1_TP3_VD1",
-          "CoronavirusAwareness_EP1_TP3_PDF1",
-        ],
-          "vernacular_id": "VR_CoronavirusAwareness_EP1_TP3"
-          },
-        ]
-      }
-      
-      var firestore=firebaseConnection();
+  
+  var fileName = "CoronavirusAwareness_topics.json.txt";
+  var files = DriveApp.getFilesByName(fileName);
+  if (files.hasNext()) {
+    var file = files.next();
+    var content = file.getBlob().getDataAsString();
+    var json = JSON.parse(content);
+  }
+  
+  
+  
+  var obj=[];
+  obj=json;
+  
+  var firestore=firebaseConnection();
       Logger.log(obj.topics.length);
       
       for(var i=0;i<obj.topics.length;i++)
       {
          firestore.createDocument("topics", obj.topics[i]);
       }
-      
-      
-      
 }
 
 
@@ -98,5 +71,6 @@ function firebaseUploadLight()
   {
     firestore.createDocument("classes", obj.classes[i]);
   }
+     
       
 }
